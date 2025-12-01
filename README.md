@@ -1,135 +1,122 @@
-# Laboratorio 
-# Consumo de API's con flutter
+# 🧪 Laboratorio 
+## 💻 Consumo de API's con Flutter
 
-El presente repo contiene una aplicación que consume el API de https://pokeapi.co/, con el endpoint [https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0](https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0)
+El presente repositorio contiene una aplicación que consume el API de [PokeAPI](https://pokeapi.co/), con el endpoint:  
+[https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0](https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0)
 
-Actividad 1:
-La actividad por realizar es generar una aplicación que me permita buscar y mostrar Pokémons pero con todas sus características, incluida su foto, para lo cual puede consumir el endpoint: https://pokeapi.co/api/v2/pokemon/ditto , en este caso "ditto" es el nombre del Pokémon a mostrar.
+---
 
-🔴⚪ Pokédex Flutter App
+### 📝 Actividad 1
+La actividad consiste en generar una aplicación que permita **buscar y mostrar Pokémons con todas sus características**, incluida su foto.  
+Para esto, se puede consumir el endpoint:  
 
-Una aplicación móvil desarrollada con Flutter que permite buscar y visualizar información detallada de Pokémon en tiempo real.
-Este proyecto consume la API pública PokeAPI para obtener estadísticas, tipos, habilidades e imágenes oficiales.
+https://pokeapi.co/api/v2/pokemon/ditto
 
-📱 Capturas de Pantalla
+> Nota: `"ditto"` es un ejemplo del nombre del Pokémon a mostrar.
 
-(Reemplaza estas rutas con tus imágenes reales o elimina esta sección si no subirás capturas.)
+---
 
-Pantalla de Búsqueda
+# 🔴⚪ Pokédex Flutter App
 
-<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/1ec178b5-f3f4-49b3-baae-9f965c4afb09" />
+Una aplicación móvil desarrollada con **Flutter** que permite buscar y visualizar información detallada de Pokémon en tiempo real.  
+Este proyecto consume la API pública **PokeAPI** para obtener estadísticas, tipos, habilidades e imágenes oficiales.
 
+---
 
-Detalle del Pokémon
+## 📱 Capturas de Pantalla
 
-<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/80ce4fe8-2ccc-45b6-ba65-a7bc2e22fab1" />
+**Pantalla de Búsqueda**  
 
-<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/d0cc1b94-76ff-44f8-a73f-835e4a8ed679" />
+<img width="720" height="1600" alt="Pantalla de búsqueda" src="https://github.com/user-attachments/assets/1ec178b5-f3f4-49b3-baae-9f965c4afb09" />
 
-✨ Características Principales
+**Detalle del Pokémon**  
 
-Buscador en tiempo real
-Ingresa el nombre de cualquier Pokémon (ej: pikachu, mewtwo).
+<img width="720" height="1600" alt="Detalle Pokémon" src="https://github.com/user-attachments/assets/80ce4fe8-2ccc-45b6-ba65-a7bc2e22fab1" />
 
-Interfaz temática
-Estilo inspirado en una Pokédex clásica (colores rojo/blanco).
+<img width="720" height="1600" alt="Detalle Pokémon" src="https://github.com/user-attachments/assets/d0cc1b94-76ff-44f8-a73f-835e4a8ed679" />
 
-Detalles completos del Pokémon:
+---
 
-Imagen oficial (Official Artwork)
+## ✨ Características Principales
 
-Tipos (Agua, Fuego, Planta, etc.)
+- **Buscador en tiempo real:**  
+  Ingresa el nombre de cualquier Pokémon (ej: `pikachu`, `mewtwo`).
 
-Estadísticas base (HP, Ataque, Defensa, Velocidad) con barras de progreso
+- **Interfaz temática:**  
+  Inspirada en la Pokédex clásica (colores rojo/blanco).
 
-Peso y altura
+- **Detalles completos del Pokémon:**  
+  - Imagen oficial (*Official Artwork*)  
+  - Tipos (Agua, Fuego, Planta, etc.)  
+  - Estadísticas base (HP, Ataque, Defensa, Velocidad) con barras de progreso  
+  - Peso y altura  
+  - Lista de habilidades  
 
-Lista de habilidades
+- **Manejo de errores:**  
+  Mensajes amigables cuando no se encuentra un Pokémon o no hay internet.
 
-Manejo de errores
-Mensajes amigables cuando no se encuentra un Pokémon o no hay internet.
+---
 
-🛠️ Tecnologías Utilizadas
+## 🛠️ Tecnologías Utilizadas
 
-Framework: Flutter (SDK ^3.5.4)
+- **Framework:** Flutter (SDK ^3.5.4)  
+- **Lenguaje:** Dart  
+- **HTTP Requests:** Paquete `http` (^1.2.2)  
+- **API:** PokeAPI v2  
 
-Lenguaje: Dart
+---
 
-HTTP Requests: Paquete http (^1.2.2)
+## 🚀 Instalación y Ejecución
 
-API: PokeAPI v2
+Sigue estos pasos para correr el proyecto localmente:
 
+### 1️⃣ Clonar el repositorio
+```bash
 🚀 Instalación y Ejecución
 
-Sigue estos pasos para correr el proyecto de forma local:
-
 1️⃣ Clonar el repositorio
-git clone https://github.com/TU_USUARIO/pokemonapi.git
-cd pokemonapi
+$ git clone https://github.com/TU_USUARIO/pokemonapi.git
+$ cd pokemonapi
 
 2️⃣ Instalar dependencias
-flutter pub get
+$ flutter pub get
 
-3️⃣ Ejecutar la app
-
+3️⃣ Ejecutar la aplicación
 Conecta un dispositivo físico o inicia un emulador:
-
-flutter run
+$ flutter run
 
 📂 Estructura del Código
 
-El proyecto utiliza una estructura sencilla dentro de lib/main.dart:
+El proyecto sigue una estructura simple dentro de lib/main.dart:
 
 PokemonApp
-
-Widget principal
-
-Configura el MaterialApp, el tema visual (rojo/blanco) y fuentes globales
+  - Widget principal
+  - Configura MaterialApp, tema visual (rojo/blanco) y fuentes globales
 
 PokemonSearchScreen
-
-Pantalla principal (StatefulWidget), incluye:
-
-TextField para ingresar la búsqueda
-
-Función asíncrona que hace peticiones a la API
-
-Manejo de estados:
-
-_isLoading
-
-_errorMessage
-
-_pokemonData
+  - Pantalla principal (StatefulWidget), incluye:
+    * TextField para la búsqueda
+    * Función asíncrona para conectarse con la API
+    * Manejo de estados:
+        _isLoading
+        _errorMessage
+        _pokemonData
 
 _buildPokemonDetailCard
-
-Renderiza la tarjeta de información del Pokémon:
-
-Imagen oficial
-
-Chips con los tipos
-
-Barras de estadísticas
-
-Datos físicos
-
-Habilidades
+  - Renderiza la tarjeta de información del Pokémon:
+    * Imagen oficial
+    * Chips con los tipos
+    * Barras de estadísticas
+    * Datos físicos
+    * Habilidades
 
 📡 Consumo de API
 
-La app realiza una petición GET al siguiente endpoint:
+La aplicación realiza una petición GET al endpoint:
+$ GET https://pokeapi.co/api/v2/pokemon/{nombre}
 
-GET https://pokeapi.co/api/v2/pokemon/{nombre}
+La respuesta JSON se procesa para mostrar únicamente la información necesaria.
 
+✒️ Autor
 
-La respuesta JSON se procesa para extraer solo la información necesaria.
-
-Christian Márquez
-
-
-
-Actividad 2:
-
-https://github.com/ChristianMarquez2/Detector-Amenazas.git 
-
+Christian Márquez – Desarrollo inicial
