@@ -116,7 +116,10 @@ La aplicación realiza una petición GET al endpoint:
 $ GET https://pokeapi.co/api/v2/pokemon/{nombre}
 
 La respuesta JSON se procesa para mostrar únicamente la información necesaria.
+```
 
 ✒️ Autor
 
 Christian Márquez – Desarrollo inicial
+
+Actividad 2: https://github.com/ChristianMarquez2/Detector-Amenazas.git
